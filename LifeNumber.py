@@ -11,19 +11,19 @@ def getNumberType(): # 인생수의 종류 입력
 
 def getNumber(birthSum): # 선천수, 후천수 계산
     numString = str(birthSum)
-    sum = 0
+    number = 0
     for i in numString:
-        sum += int(i)
-    if sum <= 22:
-        return sum
+        number += int(i)
+    if number <= 22:
+        return number
     else:
-        return getNumber(sum)
+        return getNumber(number)
     
 def getBirth(birthType): # 생년월일을 입력받아 합을 계산
     print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
     year, month, day  = map(int,input().split('.'))
-    sum = year + month + day
-    return sum
+    birthSum = year + month + day
+    return birthSum
     
 def getCareerNumber(): # 직업수 (선천수 + 후천수) 계산
     lunarBirth = getBirth(1) # 음력 생일 합
@@ -32,11 +32,10 @@ def getCareerNumber(): # 직업수 (선천수 + 후천수) 계산
     sumNumber = getNumber(solarBirth) # 후천수 계산
     birthSum = moonNumber + sumNumber
     while True:
-        sum = getBirth(birthSum)
-        if sum <= 9:
-            print(1)
+        s = getNumber(birthSum)
+        if s <= 9:
             break
-    return sum  
+    return s  
 
 numberTypes = {1 : "선천수" , 2 : "후천수" , 3 : "직업수"}
 BirthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
