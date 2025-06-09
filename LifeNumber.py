@@ -8,5 +8,5 @@ def getNumber(num): # 선천수, 후천수, 직업수 계산
     else:
         return getNumber(sum)
     
-def getCareerCard():
+def getCareerCard(): # commitcheck
     
