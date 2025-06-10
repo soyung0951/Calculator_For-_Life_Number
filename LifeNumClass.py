@@ -1,129 +1,4 @@
-# 인생수 계산기 클래스
-
-class LifeNumCalculator():
-    
-    def intro(): # 프로그램 시작 안내 함수
-        print("\n","="*40)
-        print()
-        print("인생수 계산기 프로그램이 시작됩니다.")
-        print("다음 절차에 따라 생년월일을 입력하여 선천수와 후천수, 직업수를 알아보고 운명의 타로카드를 알 수 있습니다.")
-        print()
-        print("-"*40)
-        print()
-        
-        
-         
-    def calculateLifeNumber(self):
-        self.getLifeNumber() # 인생수 생성
-        self.printLifeNumber() # 인생수 출력
-        self.checkTarotMeaning() # 타로카드 해석 열람
-        self.checkRetry() # 프로그램 재시작 여부 확인
-        
-        
-    
-    def getLifeNumber(self): # 인생수 계산 함수
-        self.numberType = self.getNumberType() # 인생수의 유형 입력
-        if self.numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우
-            MoonNumber = self.getNumberSum(1) # 선천수 생성
-            SunNumber = self.getNumberSum(2) # 후천수 생성
-            lifeNumber = self.getNumberSum(MoonNumber + SunNumber)
-            while lifeNumber > 9: # 직업수는 9 이하 이다.
-                self.lifeNumber = self.getNumberSum(MoonNumber + SunNumber)
-        elif 1 <= self.numberType <= 2 : # 선천수 또는 후천수를 구하는 경우
-            self.lifeNumber = self.getNumberSum(self.numberType)
-        else:
-            print("잘못된 입력입니다.")
-            print("다시 입력해 주세요.")
-            print()
-            self.getLifeNumber()
-        
-    def getNumberType(self): # 인생수의 종류 입력 함수
-        print("알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)")
-        numberType = int(input())
-        print()
-        if 1 <= numberType <= 3:
-            return numberType
-        else:
-            print("잘못된 입력입니다.")
-            print("다시 입력해 주세요.")
-            print()
-            return self.getNumberType()
-      
-    def getNumberSum(self, birthType): # 수의 합 생성 함수
-        BirthSum = self.getBirthSum(birthType)
-        numberSum = 0
-        for i in BirthSum:
-            numberSum += int(i)
-        if numberSum <= 22:
-            return numberSum
-        else:
-            return self.getNumberSum(numberSum)
-        
-    def getBirthSum(self, birthType): # 생년월일 입력 및 합 생성 함수
-        print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
-        year, month, day  = map(int,input().split('.'))
-        print()
-        birthSum = year + month + day
-        return birthSum
-    
-    
-    
-    def printLifeNumber(self): # 인생수 출력 함수
-        print("-"*40)
-        print()
-        # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
-        print(f"당신의 {numberTypes[self.numberType]}는 {self.lifeNumber}이고, 운명의 타로카드는 {tarotCard[self.lifeNumber % 21]}입니다.")
-        print()
-        
-        
-    
-    def checkTarotMeaning(self):
-        print("운명의 타로카드의 해석을 보시겠습니까? (1 : 에 | 2 : 아니오")
-        checkMeaning = int(input())
-        print()
-        if checkMeaning == 1:
-            print(f"---------- 운명의 타로카드 {tarotCard[self.lifeNumber % 21]}의 해석 ----------")
-            print(tarotCardMeaning[self.lifeNumber % 21])
-            print()
-        elif checkMeaning == 2:
-            pass
-        else:
-            print("잘못된 입력입니다.")
-            print("다시 입력해 주세요.")
-            print()
-            self.checkTarotMeaning()
-        
-        
-        
-    def checkRetry(self):
-        print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
-        retry = int(input())
-        print()
-        if retry == 1:
-            self.calculateLifeNumber()
-        elif retry == 2:
-            pass
-        else:
-            print("잘못된 입력입니다.")
-            print("다시 입력해 주세요.")
-            print()
-            self.checkRetry()
-            
-        
-        
-    def outro(self):
-        print("-"*40)
-        print()
-        print("인생수 계산기 프로그램이 종료됩니다.")
-        print("="*40)
-        
-# main
-
-LifeNumCalculator.intro()
-LifeNumCalculator.calculateLifeNumber()
-LifeNumCalculator.outro()
-
-# 프로그램에 필요한 딕셔너리
+# 프로그램에 필요한 정보를 담은 딕셔너리
 
 numberTypes = {1 : "선천수" , 2 : "후천수" , 3 : "직업수"}
 BirthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
@@ -222,3 +97,148 @@ tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 역방향 : 미완성, 좌절, 끝내지 못한 일
 - 미완성이나 좌절, 끝내지 못한 일을 나타냅니다. 목표를 다시 설정하고 끝맺음을 지어야 합니다."""
 }
+
+
+
+# 인생수 계산기 클래스
+
+class LifeNumCalculator():
+    
+    def intro(self): # 프로그램 시작 안내 함수
+        print("\n"+"="*40)
+        print()
+        print("인생을 읽는 숫자 프로그램이 시작됩니다.")
+        print("다음 절차에 따라 생년월일을 입력하여 선천수와 후천수, 직업수를 알아보고 운명의 타로카드를 알 수 있습니다.")
+        print()
+        print("-"*40)
+        print()
+        
+        
+         
+    def calculateLifeNumber(self):
+        self.getLifeNumber() # 인생수 생성
+        self.printLifeNumber() # 인생수 출력
+        self.checkTarotMeaning() # 타로카드 해석 열람
+        self.checkRetry() # 프로그램 재시작 여부 확인
+        
+        
+    
+    def getLifeNumber(self): # 인생수 계산 함수
+        self.numberType = self.getNumberType() # 인생수의 유형 입력
+        if self.numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우
+            MoonNumber = self.getNumberSum(1) # 선천수 생성
+            SunNumber = self.getNumberSum(2) # 후천수 생성
+            lifeNumber = self.getNumberSum(MoonNumber + SunNumber)
+            while lifeNumber > 9: # 직업수는 9 이하 이다.
+                self.lifeNumber = self.getNumberSum(MoonNumber + SunNumber)
+        elif 1 <= self.numberType <= 2 : # 선천수 또는 후천수를 구하는 경우
+            self.lifeNumber = self.getNumberSum(self.numberType)
+        else:
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            self.getLifeNumber()
+        
+    def getNumberType(self): # 인생수의 종류 입력 함수
+        print("알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)")
+        try:
+            numberType = int(input())
+        except:
+            print()
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            self.getNumberType
+        print()
+        if 1 <= numberType <= 3:
+            return numberType
+        else:
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            return self.getNumberType()
+      
+    def getNumberSum(self, birthType): # 수의 합 생성 함수
+        birthSum = str(self.getBirthSum(birthType))
+        numberSum = 0
+        for i in birthSum:
+            numberSum += int(i)
+        if numberSum <= 22:
+            return numberSum
+        else:
+            return self.getNumberSum(numberSum)
+        
+    def getBirthSum(self, birthType): # 생년월일 입력 및 합 생성 함수
+        print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
+        try:
+            year, month, day  = map(int,input().split('.'))
+        except:
+            print()
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            self.getNumberSum
+        print()
+        birthSum = year + month + day
+        return birthSum
+    
+    
+    
+    def printLifeNumber(self): # 인생수 출력 함수
+        print("-"*40)
+        print()
+        # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
+        print(f"당신의 {numberTypes[self.numberType]}는 {self.lifeNumber}이고, 운명의 타로카드는 {tarotCard[self.lifeNumber % 21]}입니다.")
+        print()
+        
+        
+    
+    def checkTarotMeaning(self):
+        print("운명의 타로카드의 해석을 보시겠습니까? (1 : 에 | 2 : 아니오)")
+        checkMeaning = int(input())
+        print()
+        if checkMeaning == 1:
+            print(f"---------- 운명의 타로카드 {tarotCard[self.lifeNumber % 21]}의 해석 ----------")
+            print(tarotCardMeaning[self.lifeNumber % 21])
+            print("-"*40)
+            print()
+        elif checkMeaning == 2:
+            pass
+        else:
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            self.checkTarotMeaning()
+        
+        
+        
+    def checkRetry(self):
+        print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
+        retry = int(input())
+        print()
+        if retry == 1:
+            self.calculateLifeNumber()
+        elif retry == 2:
+            pass
+        else:
+            print("잘못된 입력입니다.")
+            print("다시 입력해 주세요.")
+            print()
+            self.checkRetry()
+            
+        
+        
+    def outro(self):
+        print("-"*40)
+        print()
+        print("인생을 읽는 숫자 프로그램이 종료됩니다.")
+        print("="*40)
+        
+        
+        
+# main
+
+lifeNumCalculator = LifeNumCalculator()
+lifeNumCalculator.intro()
+lifeNumCalculator.calculateLifeNumber()
+lifeNumCalculator.outro()
