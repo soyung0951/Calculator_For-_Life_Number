@@ -1,13 +1,150 @@
-# 프로그램에 필요한 정보를 담은 딕셔너리
+# 인생수 계산기 함수
+
+def intro(): # 프로그램 시작 안내 함수
+        print("\n"+"="*80)
+        print()
+        print("인생을 읽는 숫자 프로그램이 시작됩니다.")
+        print("다음 절차에 따라 생년월일을 입력하여 선천수와 후천수, 직업수를 알아보고 운명의 타로카드를 알 수 있습니다.")
+        print()
+        print("-"*80)
+        print()
+
+
+
+def calculateLifeNumber(): # 메인 스트림 함수 (프로그램 재시작 시 필요)
+    numberType, lifeNumber = getLifeNumber() # 인생수 생성
+    printLifeNumber(numberType, lifeNumber) # 인생수 출력
+    checkTarotMeaning(lifeNumber) # 타로카드 해석 열람
+    checkRetry() # 프로그램 재시작 여부 확인
+
+
+
+def getLifeNumber(): # 인생수 계산 함수
+    numberType = getNumberType() # 인생수의 유형 입력
+    if numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우
+        MoonNumber = getNumberSum(1) # 선천수 생성
+        SunNumber = getNumberSum(2) # 후천수 생성
+        lifeNumber = getNumberSum(MoonNumber + SunNumber)
+        while lifeNumber > 9: # 직업수는 9 이하 이다.
+            lifeNumber = getNumberSum(lifeNumber)
+    elif 1 <= numberType <= 2 : # 선천수 또는 후천수를 구하는 경우
+            birthSum = getBirthSum(numberType)
+            lifeNumber = getNumberSum(birthSum)
+    return numberType, lifeNumber
+        
+def getNumberType(): # 인생수의 종류 입력 함수
+    while True:
+        try:
+            print("알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)")
+            numberType = int(input())
+        except ValueError:
+            printWorngInput()
+            continue
+        if 1 <= numberType <= 3:
+            break
+        printWorngInput()
+    print()
+    return numberType
+      
+def getNumberSum(birthSum): # 수의 합 생성 함수
+    birthSumString = str(birthSum)
+    numberSum = 0
+    for i in birthSumString:
+        numberSum += int(i)
+    if numberSum <= 22:
+        return numberSum
+    else:
+        return getNumberSum(numberSum)
+        
+def getBirthSum(birthType): # 생년월일 입력 및 합 생성 함수
+    while True:
+        try:
+            print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
+            year, month, day = map(int, input().split('.'))
+        except ValueError:
+            printWorngInput()
+            continue
+        if year > 0 and 12 >= month >= 1 and 31 >= day >= 1:
+            break
+        printWorngInput()
+    print()
+    birthSum = year + month + day
+    return birthSum
+    
+    
+    
+def printLifeNumber(numberType, lifeNumber): # 인생수 출력 함수
+    print("-"*40)
+    print()
+    print(f"당신의 {numberTypes[numberType]}는 {lifeNumber}이고, 운명의 타로카드는 {tarotCard[lifeNumber % 21]}입니다.") # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
+    print()
+        
+        
+    
+def checkTarotMeaning(lifeNumber):
+    while True:
+        try:
+            print("운명의 타로카드의 해석을 보시겠습니까? (1 : 에 | 2 : 아니오)")
+            checkMeaning = int(input())
+        except ValueError:
+            printWorngInput()
+            continue
+        if 1 <= checkMeaning <= 2:
+            break
+        printWorngInput()
+    print()
+    if checkMeaning == 1:
+        print(f"------------------ 운명의 타로카드 {tarotCard[lifeNumber % 21]}의 해석 ------------------")
+        print(tarotCardMeaning[lifeNumber % 21])
+        print("-"*80)
+        print()
+    else:
+        print("-"*40)
+        print()
+        
+        
+        
+def checkRetry():
+    while True:
+        try:
+            print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
+            retry = int(input())
+        except ValueError:
+            printWorngInput()
+            continue
+        if 1 <= retry <= 2:
+            break
+        printWorngInput()
+    print()
+    if retry == 1:
+        print()
+        print("-"*40)
+        print()
+        calculateLifeNumber()
+            
+        
+        
+def outro():
+    print("-"*40)
+    print()
+    print("인생을 읽는 숫자 프로그램이 종료됩니다.")
+    print()
+    print("="*40)
+        
+        
+    
+def printWorngInput():
+    print()
+    print("잘못된 입력입니다.")
+    print("다시 입력해 주세요.")
+    print()
 
 numberTypes = {1 : "선천수" , 2 : "후천수" , 3 : "직업수"}
 BirthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
-# 타로카드 번호 : 타로카드 이름
 tarotCard =  {0 : "0번 Fool (광대)" , 1 : "1번 Magician (마법사)" , 2 : "2번 The High Priestess (여사제)" , 3 : "3번 The Empress (여왕)", 4 : "4번 The Emperor (황제)", 5 : "5번 Hierophant (교황)" ,
               6 : "6번 The Lovers (연인들)" , 7 : "7번 The Chariot (전차)" , 8 : "8번 Strength (힘)" , 9  : "9번 The Hermit (은둔자)" , 10 : "10번 The Wheel Of Fortune (운명의 수레바퀴)" ,
               11  :  "11번 Justice  (정의)" , 12 : "12번 The Hanged Man (매달린 사람)" ,  13 : "13번 Death (죽음)" , 14 : "14번 Temperance (절제)" , 15 : "15번 Devil (악마)" ,
               16 : "16번 The Tower (탑)", 17 : "17번 The Star (별)" , 18 : "18번 The Moon (달)" , 19  :"19번 The Sun (태양)" , 20 : "20번 Judgement (심판)" , 21 : "21번 The World (세계)"}
-# 타로카드 번호 : 타로카드 해석
 tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 - 새로운 시작과 모험, 순수함을 상징합니다. 새로운 여정을 시작하거나 삶에 새로운 접근 방식을 시도할 때 나타납니다.
 역방향 : 무모함, 방황, 준비 부족
@@ -98,157 +235,59 @@ tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 - 미완성이나 좌절, 끝내지 못한 일을 나타냅니다. 목표를 다시 설정하고 끝맺음을 지어야 합니다."""
 }
 
+############################################### main ###############################################
 
+intro()
+calculateLifeNumber()
+outro()
 
-# 인생수 계산기 클래스
+# ========================================
 
-class LifeNumCalculator():
-    
-    def intro(self): # 프로그램 시작 안내 함수
-        print("\n"+"="*80)
-        print()
-        print("인생을 읽는 숫자 프로그램이 시작됩니다.")
-        print("다음 절차에 따라 생년월일을 입력하여 선천수와 후천수, 직업수를 알아보고 운명의 타로카드를 알 수 있습니다.")
-        print()
-        print("-"*80)
-        print()
-        
-        
-         
-    def calculateLifeNumber(self): # 메인 스트림 함수 (프로그램 재시작 시 필요)
-        self.getLifeNumber() # 인생수 생성
-        self.printLifeNumber() # 인생수 출력
-        self.checkTarotMeaning() # 타로카드 해석 열람
-        self.checkRetry() # 프로그램 재시작 여부 확인
-        
-        
-    
-    def getLifeNumber(self): # 인생수 계산 함수
-        self.numberType = self.getNumberType() # 인생수의 유형 입력
-        if self.numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우
-            lunaBirthSum = self.getBirthSum(1)
-            moonNumber = self.getNumberSum(lunaBirthSum) # 선천수 생성
-            solarBirthSum = self.getBirthSum(2)
-            sunNumber = self.getNumberSum(solarBirthSum) # 후천수 생성
-            self.lifeNumber = self.getNumberSum(moonNumber + sunNumber)
-            while self.lifeNumber > 9: # 직업수는 9 이하 이다.
-                self.lifeNumber = self.getNumberSum(self.lifeNumber)
-        elif 1 <= self.numberType <= 2 : # 선천수 또는 후천수를 구하는 경우
-            birthSum = self.getBirthSum(self.numberType)
-            self.lifeNumber = self.getNumberSum(birthSum)
-        
-    def getNumberType(self): # 인생수의 종류 입력 함수
-        while True:
-            try:
-                print("알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)")
-                numberType = int(input())
-            except ValueError:
-                self.printWorngInput()
-                continue
-            if 1 <= numberType <= 3:
-                break
-            self.printWorngInput()
-        print()
-        return numberType
-      
-    def getNumberSum(self, birthSum): # 수의 합 생성 함수
-        birthSumString = str(birthSum)
-        numberSum = 0
-        for i in birthSumString:
-            numberSum += int(i)
-        if numberSum <= 22:
-            return numberSum
-        else:
-            return self.getNumberSum(numberSum)
-        
-    def getBirthSum(self, birthType): # 생년월일 입력 및 합 생성 함수
-        while True:
-            try:
-                print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
-                year, month, day = map(int, input().split('.'))
-            except ValueError:
-                self.printWorngInput()
-                continue
-            if year > 0 and 12 >= month >= 1 and 31 >= day >= 1:
-                break
-            self.printWorngInput()
-        print()
-        birthSum = year + month + day
-        return birthSum
-    
-    
-    
-    def printLifeNumber(self): # 인생수 출력 함수
-        print("-"*83)
-        print()
-        # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
-        print(f"당신의 {numberTypes[self.numberType]}는 {self.lifeNumber}이고, 운명의 타로카드는 {tarotCard[self.lifeNumber % 21]}입니다.")
-        print()
-        
-        
-    
-    def checkTarotMeaning(self):
-        while True:
-            try:
-                print("운명의 타로카드의 해석을 보시겠습니까? (1 : 예 | 2 : 아니오)")
-                checkMeaning = int(input())
-            except ValueError:
-                self.printWorngInput()
-                continue
-            if 1 <= checkMeaning <= 2:
-                break
-            self.printWorngInput()
-        print()
-        if checkMeaning == 1:
-            print(f"------------------ 운명의 타로카드 {tarotCard[self.lifeNumber % 21]}의 해석 ------------------")
-            print(tarotCardMeaning[self.lifeNumber % 21])
-            print("-"*83)
-            print()
-        else:
-            print("-"*83)
-            print()
-        
-        
-        
-    def checkRetry(self):
-        while True:
-            try:
-                print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
-                retry = int(input())
-            except ValueError:
-                self.printWorngInput()
-                continue
-            if 1 <= retry <= 2:
-                break
-            self.printWorngInput()
-        print()
-        if retry == 1:
-            print()
-            print("-"*83)
-            print()
-            self.calculateLifeNumber()
-            
-        
-        
-    def outro(self):
-        print("-"*83)
-        print()
-        print("인생을 읽는 숫자 프로그램이 종료됩니다.")
-        print("="*83)
-        
-        
-    
-    def printWorngInput(self):
-        print()
-        print("잘못된 입력입니다.")
-        print("다시 입력해 주세요.")
-        print()
-        
-        
-        
-# main
+# 인생을 읽는 숫자 프로그램이 시작됩니다.
+# 다음 절차에 따라 생년월일을 입력하여 선천수와 후천수, 직업수를 알아보고 운명의 타로카드를 알 수 있습니다.
 
-lifeNumCalculator = LifeNumCalculator()
-lifeNumCalculator.intro()
-lifeNumCalculator.calculateLifeNumber()
-lifeNumCalculator.outro()
+# ----------------------------------------
+
+# 알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)
+# 1
+
+# 당신의 음력 생일을 0000.00.00의 형태로 입력하세요.
+# 2009.04.07
+
+# ----------------------------------------
+
+# 당신의 선천수는 4이고, 운명의 타로카드는 4번 The Emperor (황제)입니다.
+
+# 운명의 타로카드의 해석을 보시겠습니까? (1 : 에 | 2 : 아니오)
+# 1
+
+# ---------- 운명의 타로카드 4번 The Emperor (황제)의 해석 ----------
+# 정방향 : 권위, 구조, 안정
+# - 권위와 구조, 안정을 상징합니다. 강한 리더십과 체계적인 접근이 필요한 시기입니다.
+# 역방향 : 독재, 권위 남용, 무질서
+# - 독재나 권위 남용, 무질서를 나타냅니다. 권력을 남용하지 않고 공정하게 행동해야 합니다.
+# ----------------------------------------
+
+# 다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)
+# 1
+
+# 알아볼 인생수의 유형을 입력해 주세요. (1 : 선천수 | 2 : 후천수 | 3 : 직업수)
+# 2
+
+# 당신의 양력 생일을 0000.00.00의 형태로 입력하세요.
+# 2009.05.01
+
+# ----------------------------------------
+
+# 당신의 후천수는 8이고, 운명의 타로카드는 8번 Strength (힘)입니다.
+
+# 운명의 타로카드의 해석을 보시겠습니까? (1 : 에 | 2 : 아니오)
+# 2
+
+# 다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)
+# 2
+
+# ----------------------------------------
+
+# 인생을 읽는 숫자 프로그램이 종료됩니다.
+# ========================================
