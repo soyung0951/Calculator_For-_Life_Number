@@ -187,7 +187,7 @@ class LifeNumCalculator():
         
         
     
-    def checkTarotMeaning(self):
+    def checkTarotMeaning(self): # 타로카드 해석 출력 함수
         while True:
             try:
                 print("운명의 타로카드의 해석을 보시겠습니까? (1 : 예 | 2 : 아니오)")
@@ -210,7 +210,7 @@ class LifeNumCalculator():
         
         
         
-    def checkRetry(self):
+    def checkRetry(self): # 프로그램 재시작 확인 함수
         while True:
             try:
                 print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
@@ -230,7 +230,7 @@ class LifeNumCalculator():
             
         
         
-    def outro(self):
+    def outro(self): # 프로그램 종료 안내 함수
         print("-"*83)
         print()
         print("인생을 읽는 숫자 프로그램이 종료됩니다.")
@@ -238,7 +238,7 @@ class LifeNumCalculator():
         
         
     
-    def printWorngInput(self):
+    def printWorngInput(self): # 오류 안내 함수
         print()
         print("잘못된 입력입니다.")
         print("다시 입력해 주세요.")
