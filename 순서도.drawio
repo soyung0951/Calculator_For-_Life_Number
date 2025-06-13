@@ -1,0 +1,579 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="페이지-1" id="T9NkQtopT7B5hP_qBF66">
+    <mxGraphModel dx="6450" dy="4270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-1" target="Tp7lmeNCv7-hRE_vfMCg-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-1" value="시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="167" y="9" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-111" target="Tp7lmeNCv7-hRE_vfMCg-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="269" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-2" target="Tp7lmeNCv7-hRE_vfMCg-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-2" value="프로그램 시작 안내 출력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="167" y="89" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.473;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-4" target="Tp7lmeNCv7-hRE_vfMCg-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-4" value="운세 유형 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="167" y="269" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="233" y="259" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="334" y="389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-113" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-9">
+          <mxGeometry x="-0.8031" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-6" target="Tp7lmeNCv7-hRE_vfMCg-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-114" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-11">
+          <mxGeometry x="0.4969" y="2" relative="1" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-6" value="입력값 == 1 or&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;입력값 =&lt;/span&gt;= 2 or&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;입력값 =&lt;/span&gt;= 3 ?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="349" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-10" target="Tp7lmeNCv7-hRE_vfMCg-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-10" target="Tp7lmeNCv7-hRE_vfMCg-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-10" value="운세 유형 == 3 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="449" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="593" y="559" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-14" value="운세 유형 == 1&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="343" y="449" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="809" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="593" y="819" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="593" y="809" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-20" target="Tp7lmeNCv7-hRE_vfMCg-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-20" value="위에서 구한 합의 자릿수의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="343" y="849" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-22" target="Tp7lmeNCv7-hRE_vfMCg-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-22" value="위에서 구한 합의 자릿수의 합 구하기" style="whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="533" y="854" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="829" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="494" y="959" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-147" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-33">
+          <mxGeometry x="-0.7603" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="403" y="1670" />
+              <mxPoint x="220" y="1670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-149" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-75">
+          <mxGeometry x="-0.9099" y="3" relative="1" as="geometry">
+            <mxPoint x="7" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-26" value="위에서 구한 합 &amp;lt;= 22 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="343" y="929" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="593" y="839" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="673" y="959" />
+              <mxPoint x="673" y="839" />
+              <mxPoint x="593" y="839" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-148" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-36">
+          <mxGeometry x="-0.7641" y="5" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="593" y="1680" />
+              <mxPoint x="220" y="1680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-150" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-78">
+          <mxGeometry x="-0.9589" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-28" value="위에서 구한 합 &amp;lt;= 22 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="533" y="929" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="809" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-52" target="Tp7lmeNCv7-hRE_vfMCg-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-52" value="음력 생년월일 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="559" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-54" target="Tp7lmeNCv7-hRE_vfMCg-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-54" value="위에서 구한 합의 자릿수의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="849" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="839" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="328.5" y="969" />
+            </Array>
+            <mxPoint x="282.5600000000002" y="969.0400000000002" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-146" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-55">
+          <mxGeometry x="-0.7995" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-56" value="위에서 구한 합 &amp;lt;= 22 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="929" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.46;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-160">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="218" y="1363" as="sourcePoint" />
+            <mxPoint x="217" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-69" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.535;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="214" y="1119" as="sourcePoint" />
+            <mxPoint x="222.70000000000027" y="1028.7600000000002" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-151" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-69">
+          <mxGeometry x="-0.6411" y="-3" relative="1" as="geometry">
+            <mxPoint x="13" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="217.33333333333326" y="1552" as="sourcePoint" />
+            <mxPoint x="217.255" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-175" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="217" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-80" value="선천수와 후천수의 합의 자릿수의 합 &amp;lt;= 9 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="158.38" y="1568" width="117.75" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-84" target="Tp7lmeNCv7-hRE_vfMCg-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-194" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-87">
+          <mxGeometry x="-0.4923" relative="1" as="geometry">
+            <mxPoint x="7" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="274.13" y="1971.81" as="sourcePoint" />
+            <mxPoint x="216" y="2118.81" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="1985.81" />
+              <mxPoint x="290" y="2118.81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-193" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-89">
+          <mxGeometry x="-0.819" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-84" value="입력값 == 1?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="156.38" y="1945.81" width="117.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-86" target="Tp7lmeNCv7-hRE_vfMCg-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-86" value="타로카드 해석 출력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="155.245" y="2047.81" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-90" target="Tp7lmeNCv7-hRE_vfMCg-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-90" value="프로그램 재시작 여부&lt;div&gt;입력&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="155.245" y="2137.81" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="279.723886111111" y="2267.8322222222223" as="sourcePoint" />
+            <mxPoint x="214.75" y="2127.81" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="289.75" y="2267.81" />
+              <mxPoint x="289.75" y="2127.81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-198" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-95">
+          <mxGeometry x="-0.7305" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-92" target="Tp7lmeNCv7-hRE_vfMCg-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-92" value="입력값 == 1 or&lt;div&gt;입력값 == 2 ?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="149.75" y="2227.81" width="130.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-98" target="Tp7lmeNCv7-hRE_vfMCg-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-195" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-103">
+          <mxGeometry x="-0.3435" y="-1" relative="1" as="geometry">
+            <mxPoint x="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-98">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="259" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="123" y="2368" />
+              <mxPoint x="123" y="259" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-196" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-107">
+          <mxGeometry x="-0.9821" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-98" value="입력값 == 2 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="149.75" y="2327.81" width="130.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-102">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="214.14999999999964" y="2517.81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-102" value="프로그램 종료 안내 출력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="154.135" y="2431.31" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-104" value="종료" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="154.135" y="2503.81" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-111" value="프로그램 설명 출력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="167" y="179" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-117">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="222" y="539" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="293" y="689" />
+              <mxPoint x="293" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-123" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-120">
+          <mxGeometry x="-0.7104" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-117" target="Tp7lmeNCv7-hRE_vfMCg-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-117" value="YYYY.MM.DD의 형식을 지켰는가?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="172.75" y="649" width="99.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-124" value="연, 월, 일의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="749" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-129">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403.5" y="529" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-129" target="Tp7lmeNCv7-hRE_vfMCg-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-129" value="음력 생년월일 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="343" y="559" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-130" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-133">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402.5" y="539" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="473.5" y="689" />
+              <mxPoint x="473.5" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-131" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-130">
+          <mxGeometry x="-0.7104" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-132" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-133" target="Tp7lmeNCv7-hRE_vfMCg-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-133" value="YYYY.MM.DD의 형식을 지켰는가?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="353.25" y="649" width="99.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-134" value="연, 월, 일의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="343" y="749" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-136" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-137" target="Tp7lmeNCv7-hRE_vfMCg-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-137" value="양력 생년월일 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="533" y="559" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-138" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-141">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="592.5" y="539" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="663.5" y="689" />
+              <mxPoint x="663.5" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-139" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-138">
+          <mxGeometry x="-0.7104" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-140" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-141" target="Tp7lmeNCv7-hRE_vfMCg-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-141" value="YYYY.MM.DD의 형식을 지켰는가?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="543.25" y="649" width="99.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-142" value="연, 월, 일의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="533" y="749" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-143" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="593" y="719" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-144" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="408" y="717" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-145" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="227" y="719" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Tp7lmeNCv7-hRE_vfMCg-156">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="1274" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-154" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="1280" as="sourcePoint" />
+            <mxPoint x="223" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-155" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-156">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="1384" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-156" value="위에서 구한 합의 자릿수의 합 구하기" style="whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1309" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="221" y="1482" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="301" y="1609" />
+              <mxPoint x="301" y="1482" />
+              <mxPoint x="251" y="1482" />
+            </Array>
+            <mxPoint x="273.83" y="1609" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-158" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-157">
+          <mxGeometry x="-0.7641" y="5" relative="1" as="geometry">
+            <mxPoint x="1" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-159" value="예" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="226.25" y="1765.003333333333" as="geometry">
+            <mxPoint x="-2" y="-106" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-160" value="위에서 구한 합 &amp;lt;=22 ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1383" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-162" target="Tp7lmeNCv7-hRE_vfMCg-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-162" value="양력 생년월일 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-166">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="1019" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="294" y="1159" />
+              <mxPoint x="294" y="1019" />
+              <mxPoint x="222" y="1019" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-164" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-163">
+          <mxGeometry x="-0.7104" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-165" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-166" target="Tp7lmeNCv7-hRE_vfMCg-167">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-166" value="YYYY.MM.DD의 형식을 지켰는가?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="173.25" y="1120" width="99.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-167" value="연, 월, 일의 합 구하기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="163" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-168" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="223" y="1190" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-170" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="212" y="1453" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-171" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223" y="1293" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="326" y="1423" />
+            </Array>
+            <mxPoint x="280.5" y="1423" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-172" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-171">
+          <mxGeometry x="-0.7995" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-173" value="선천수와 후천수의 합의 자릿수의 합 구하기" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1491" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-183" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-174" target="Tp7lmeNCv7-hRE_vfMCg-182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-174" value="운세의 종류와 계산한&amp;nbsp;&lt;div&gt;운명수, 운명의 타로카드 출력하기&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="157.135" y="1690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-188" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-182" target="Tp7lmeNCv7-hRE_vfMCg-187">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="215" y="1847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-182" value="타로카드 해석 출력&amp;nbsp;&lt;div&gt;여부 입력&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="157.13" y="1771" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-190" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-187">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="1887" />
+              <mxPoint x="290" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-191" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-190">
+          <mxGeometry x="-0.7916" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-192" value="예" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tp7lmeNCv7-hRE_vfMCg-187" target="Tp7lmeNCv7-hRE_vfMCg-84">
+          <mxGeometry x="-0.8382" y="15" relative="1" as="geometry">
+            <mxPoint x="215" y="1940" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="215" y="1930" />
+              <mxPoint x="215" y="1930" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-187" value="입력값 == 1 or&amp;nbsp;&lt;div&gt;입력값 == 2 ?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="154.38" y="1847" width="121.62" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-199" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="208" y="2298.81" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-200" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3114.5" y="24970" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="3205.5" y="25100" />
+            </Array>
+            <mxPoint x="3160" y="25100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tp7lmeNCv7-hRE_vfMCg-201" value="아니오" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Tp7lmeNCv7-hRE_vfMCg-200">
+          <mxGeometry x="-0.7995" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
