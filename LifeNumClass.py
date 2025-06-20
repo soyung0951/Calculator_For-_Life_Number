@@ -1,12 +1,14 @@
 # 프로그램에 필요한 정보를 담은 딕셔너리
 
 numberTypes = {1 : "선천수" , 2 : "후천수" , 3 : "직업수"}
-BirthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
+birthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
+
 # 타로카드 번호 : 타로카드 이름
 tarotCard =  {0 : "0번 Fool (광대)" , 1 : "1번 Magician (마법사)" , 2 : "2번 The High Priestess (여사제)" , 3 : "3번 The Empress (여왕)", 4 : "4번 The Emperor (황제)", 5 : "5번 Hierophant (교황)" ,
               6 : "6번 The Lovers (연인들)" , 7 : "7번 The Chariot (전차)" , 8 : "8번 Strength (힘)" , 9  : "9번 The Hermit (은둔자)" , 10 : "10번 The Wheel Of Fortune (운명의 수레바퀴)" ,
               11  :  "11번 Justice  (정의)" , 12 : "12번 The Hanged Man (매달린 사람)" ,  13 : "13번 Death (죽음)" , 14 : "14번 Temperance (절제)" , 15 : "15번 Devil (악마)" ,
               16 : "16번 The Tower (탑)", 17 : "17번 The Star (별)" , 18 : "18번 The Moon (달)" , 19  :"19번 The Sun (태양)" , 20 : "20번 Judgement (심판)" , 21 : "21번 The World (세계)"}
+
 # 타로카드 번호 : 타로카드 해석
 tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 - 새로운 시작과 모험, 순수함을 상징합니다. 새로운 여정을 시작하거나 삶에 새로운 접근 방식을 시도할 때 나타납니다.
@@ -123,9 +125,9 @@ class LifeNumCalculator():
         
         
     
-    def getLifeNumber(self): # 인생수 계산 함수
-        self.numberType = self.getNumberType() # 인생수의 유형 입력
-        if self.numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우
+    def getLifeNumber(self): # 인생수 생성 함수
+        self.numberType = self.getNumberType() # 인생수의 종류 입력
+        if self.numberType == 3: # 직업수(선천수 + 후천수 -> 직업수)를 구하는 경우self
             lunaBirthSum = self.getBirthSum(1)
             moonNumber = self.getNumberSum(lunaBirthSum) # 선천수 생성
             solarBirthSum = self.getBirthSum(2)
@@ -150,21 +152,11 @@ class LifeNumCalculator():
             self.printWorngInput()
         print()
         return numberType
-      
-    def getNumberSum(self, birthSum): # 수의 합 생성 함수
-        birthSumString = str(birthSum)
-        numberSum = 0
-        for i in birthSumString:
-            numberSum += int(i)
-        if numberSum <= 22:
-            return numberSum
-        else:
-            return self.getNumberSum(numberSum)
-        
+    
     def getBirthSum(self, birthType): # 생년월일 입력 및 합 생성 함수
         while True:
             try:
-                print(f"당신의 {BirthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
+                print(f"당신의 {birthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
                 year, month, day = map(int, input().split('.'))
             except ValueError:
                 self.printWorngInput()
@@ -175,6 +167,16 @@ class LifeNumCalculator():
         print()
         birthSum = year + month + day
         return birthSum
+    
+    def getNumberSum(self, birthSum): # 수의 합 생성 함수
+        birthSumString = str(birthSum)
+        numberSum = 0
+        for i in birthSumString:
+            numberSum += int(i)
+        if numberSum <= 22:
+            return numberSum
+        else:
+            return self.getNumberSum(numberSum)
     
     
     
@@ -214,15 +216,15 @@ class LifeNumCalculator():
         while True:
             try:
                 print("다른 운명수를 확인하시겠습니까? (1 : 예 | 2 : 아니오)")
-                retry = int(input())
+                checkRetry = int(input())
             except ValueError:
                 self.printWorngInput()
                 continue
-            if 1 <= retry <= 2:
+            if 1 <= checkRetry <= 2:
                 break
             self.printWorngInput()
         print()
-        if retry == 1:
+        if checkRetry == 1:
             print()
             print("-"*83)
             print()

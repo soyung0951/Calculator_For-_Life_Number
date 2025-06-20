@@ -141,12 +141,20 @@ def printWorngInput(): # 오류 안내 함수
     print("다시 입력해 주세요.")
     print()
 
+
+
+# 프로그램에 필요한 정보를 담은 딕셔너리
+
 numberTypes = {1 : "선천수" , 2 : "후천수" , 3 : "직업수"}
 BirthTypes = {1 : "음력 생일" , 2 : "양력 생일"}
+
+# 타로카드 번호 : 타로카드 이름
 tarotCard =  {0 : "0번 Fool (광대)" , 1 : "1번 Magician (마법사)" , 2 : "2번 The High Priestess (여사제)" , 3 : "3번 The Empress (여왕)", 4 : "4번 The Emperor (황제)", 5 : "5번 Hierophant (교황)" ,
               6 : "6번 The Lovers (연인들)" , 7 : "7번 The Chariot (전차)" , 8 : "8번 Strength (힘)" , 9  : "9번 The Hermit (은둔자)" , 10 : "10번 The Wheel Of Fortune (운명의 수레바퀴)" ,
               11  :  "11번 Justice  (정의)" , 12 : "12번 The Hanged Man (매달린 사람)" ,  13 : "13번 Death (죽음)" , 14 : "14번 Temperance (절제)" , 15 : "15번 Devil (악마)" ,
               16 : "16번 The Tower (탑)", 17 : "17번 The Star (별)" , 18 : "18번 The Moon (달)" , 19  :"19번 The Sun (태양)" , 20 : "20번 Judgement (심판)" , 21 : "21번 The World (세계)"}
+
+# 타로카드 번호 : 타로카드 해석
 tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 - 새로운 시작과 모험, 순수함을 상징합니다. 새로운 여정을 시작하거나 삶에 새로운 접근 방식을 시도할 때 나타납니다.
 역방향 : 무모함, 방황, 준비 부족
@@ -237,7 +245,7 @@ tarotCardMeaning = {0 : """정방향 : 새로운 시작, 순수함, 모험
 - 미완성이나 좌절, 끝내지 못한 일을 나타냅니다. 목표를 다시 설정하고 끝맺음을 지어야 합니다."""
 }
 
-############################################### main ###############################################
+# main
 
 intro()
 calculateLifeNumber()
