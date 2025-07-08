@@ -184,7 +184,7 @@ class LifeNumCalculator():
         print("-"*83)
         print()
         # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
-        print(f"당신의 {numberTypes[self.numberType]}는 {self.lifeNumber}이고, 운명의 타로카드는 {tarotCard[self.lifeNumber % 21]}입니다.")
+        print(f"당신의 {numberTypes[self.numberType]}는 {self.lifeNumber}이고, 운명의 타로카드는 {tarotCard[self.lifeNumber % 22]}입니다.")
         print()
         
         
@@ -203,7 +203,7 @@ class LifeNumCalculator():
         print()
         if checkMeaning == 1:
             print(f"------------------ 운명의 타로카드 {tarotCard[self.lifeNumber % 21]}의 해석 ------------------")
-            print(tarotCardMeaning[self.lifeNumber % 21])
+            print(tarotCardMeaning[self.lifeNumber % 22])
             print("-"*83)
             print()
         else:
