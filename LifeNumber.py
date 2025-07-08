@@ -78,7 +78,7 @@ def getBirthSum(birthType): # 생년월일 입력 및 합 생성 함수
 def printLifeNumber(numberType, lifeNumber): # 인생수 출력 함수
     print("-"*83)
     print()
-    print(f"당신의 {numberTypes[numberType]}는 {lifeNumber}이고, 운명의 타로카드는 {tarotCard[lifeNumber % 21]}입니다.") # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
+    print(f"당신의 {numberTypes[numberType]}는 {lifeNumber}이고, 운명의 타로카드는 {tarotCard[lifeNumber % 22]}입니다.") # 계산한 인생수의 유형 + 인생수 + 운명의 타로카드 출력
     print()
         
         
@@ -96,7 +96,7 @@ def checkTarotMeaning(lifeNumber): # 타로카드 해석 출력 함수
         printWorngInput()
     print()
     if checkMeaning == 1:
-        print(f"------------------ 운명의 타로카드 {tarotCard[lifeNumber % 21]}의 해석 ------------------")
+        print(f"------------------ 운명의 타로카드 {tarotCard[lifeNumber % 22]}의 해석 ------------------")
         print(tarotCardMeaning[lifeNumber % 21])
         print("-"*83)
         print()
