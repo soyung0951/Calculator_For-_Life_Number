@@ -155,14 +155,16 @@ class LifeNumCalculator():
     
     def getBirthSum(self, birthType): # 생년월일 입력 및 합 생성 함수
         while True:
+          isCorrectInput = True
             try:
                 print(f"당신의 {birthTypes[birthType]}을 0000.00.00의 형태로 입력하세요.")
                 year, month, day = map(int, input().split('.'))
             except ValueError:
-                self.printWorngInput()
-                continue
-            if year > 0 and 12 >= month >= 1 and 31 >= day >= 1:
-                break
+                isCorrectInput = False
+            if year > 0 and 12 >= month >= 1:
+                isCorrectInput = checkCorrectDate(year,month,day)
+            if isCorrectInput:
+              break
             self.printWorngInput()
         print()
         birthSum = year + month + day
